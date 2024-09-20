@@ -3,8 +3,7 @@
 export function maiorNumero(lista) {
     if(lista.length === 0 || typeof lista == "string") return null;
     
-    const maior =  Math.max(...lista)
-    return maior
+    return Math.max(...lista)
 }
 
 // Função 2 - (verificarParOuImpar): Verifica se um número é par ou ímpar usando o operador %.
@@ -14,9 +13,7 @@ export function verificarParOuImpar(numero) {
     const resto = numero % 2
     if(resto === 0){
         return "Par"
-    } else {
-        return "Ímpar"
-    }
+    } return "Ímpar"
 }
 
 // Função 3 - (contarCaracterA): Conta quantas vezes o caractere 
@@ -31,8 +28,7 @@ export function contarCaracterA(palavra, letra) {
             quantidade++
         }
         i++
-    }
-    return quantidade
+    } return quantidade
 }
 
 // Função 4 - (atualizarPropriedade): Atualiza o valor de uma 
@@ -41,7 +37,5 @@ export function atualizarPropriedade(objeto, propriedade, valor) {
     if (propriedade in objeto){
         objeto[propriedade] = valor
         return objeto
-    } else{
-        return null
-    }
+    } return null
 }
